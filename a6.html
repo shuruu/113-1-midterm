@@ -26,15 +26,16 @@
     });
   </script>
 
-  <script>
-    function changeFontSize() 
-    {
-      const inputValue = document.getElementById('t1').value;
-      const textElement = document.getElementById('t2');
-    }
-  </script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJXGTHEM2R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-EJXGTHEM2R');
+</script>
 </head>
 
 <body>
@@ -69,7 +70,7 @@
           <h1 class="s4">挑戰題(4分)</h1>
           <hr>
           <p>
-            <p class="s3">輸入數字：<input type="text" class="s2" id="t1" onchange="changeFontSize()></p>
+            <p class="s3">輸入數字：<input type="text" class="s2" id="t1"></p>
             
             <p id="t2" style="color: red;">生日快樂</p>
           </p>
