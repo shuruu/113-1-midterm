@@ -25,6 +25,22 @@
         $('#slider').nivoSlider();
     });
   </script>
+<script>
+function changeFontSize() 
+{
+  const input = document.getElementById("t1").value; 
+  const textElement = document.getElementById("t2"); 
+  const size = parseInt(input);
+  if (!isNaN(size) && size > 0) 
+  { 
+    textElement.style.fontSize = size + "px";
+  } 
+  else 
+  {
+    textElement.style.fontSize = "16px";
+  }
+}
+</script>
 
 
 <!-- Google tag (gtag.js) -->
@@ -70,7 +86,9 @@
           <h1 class="s4">挑戰題(4分)</h1>
           <hr>
           <p>
-            <p class="s3">輸入數字：<input type="text" class="s2" id="t1"></p>
+            <p class="s3">輸入數字：
+              <input type="text" class="s2" id="t1" oninput="changeFontSize()">
+            </p>
             
             <p id="t2" style="color: red;">生日快樂</p>
           </p>
